@@ -8,7 +8,7 @@ minetest.register_node("firestorm:firestorm", {
 				type = "vertical_frames",
 				aspect_w = 16,
 				aspect_h = 16,
-				length = 1
+				length = 0.5
 			},
 		},
 	},
@@ -17,11 +17,10 @@ minetest.register_node("firestorm:firestorm", {
 	paramtype = "light",
 	light_source = 13,
 	walkable = false,
-	diggable = false,
+	pointable = false,
 	buildable_to = true,
 	sunlight_propagates = true,
 	floodable = true,
-	damage_per_second = 2,
 	groups = {igniter = 2, dig_immediate = 3, in_creative_inventory = 1},
 	drop = "",
 	post_effect_color = {a = 101, r = 255, g = 44, b = 0},
